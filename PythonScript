@@ -1,3 +1,4 @@
+# import stuff
 import bpy
 
 # Define a dictionary of old bone names and new bone names
@@ -26,29 +27,22 @@ bone_name_mapping = {
     "b__L_Forearm__": "ude2_l_n",
     "b__R_Forearm__": "ude2_r_n",
     "b__R_Hand__": "ude3_r_n",
-    "b__L_Hand__": "ude3_l_n"
+    "b__L_Hand__": "ude3_l_n",
 }
 
 # Ensure you are in Object Mode and have an armature selected
 armature = bpy.context.object
 
-# Make sure the selected object is an armature
-if armature and armature.type == 'ARMATURE':
-    # Enter edit mode to modify bone names
-    bpy.ops.object.mode_set(mode='EDIT')
+# Enter edit mode to modify bone names
+bpy.ops.object.mode_set(mode="EDIT")
 
-    # Loop through the bones and rename according to the mapping
-    for bone in armature.data.edit_bones:
-       if bone.name in bone_name_mapping:
-            new_name = bone_name_mapping[bone.name]
-            bone.name = new_name
-            print(f"Renamed bone {bone.name} to {new_name}")
+# Loop through the bones and rename according to the mapping
+for bone in armature.data.edit_bones:
+    if bone.name in bone_name_mapping:
+        new_name = bone_name_mapping[bone.name]
+        bone.name = new_name
+        print(f"Renamed bone {bone.name} to {new_name}")
 
-    # Return to Object Mode
-    bpy.ops.object.mode_set(mode='OBJECT')
-
-else:
-    print("Please select an armature object.")
- 
- 
- 
+# Special Settings
+bpy.context.object.show_in_front = True  # Set the bones to always visible.
+bpy.ops.object.mode_set(mode="POSE")  # Go back to object mode.
