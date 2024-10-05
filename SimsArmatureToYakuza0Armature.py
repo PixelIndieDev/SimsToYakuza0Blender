@@ -8,7 +8,7 @@ bone_name_mapping = {
     "b__Spine2__": "mune_c_n",
     "b__Neck__": "kubi_c_n",
     "b__Head__": "face_c_n",
-    "b__Jaw__": "_jaw_c_n",
+    "b__CAS_JawComp__": "_jaw_c_n",
     "b__R_Eye__": "_eye_r_n",
     "b__L_Eye__": "_eye_l_n",
     "b__Pelvis__": "ketu_c_n",
@@ -80,6 +80,12 @@ bone_name_mapping = {
     "b__R_Mouth__": "_lip_side_r_n",
     "b__CAS_NoseTip__": "_nose_top_c_n",
     "b__CAS_Chin__": "_chin_c_n",
+    "b__L_LoLid__": "_eyelid_und2_l_n",
+    "b__R_LoLid__": "_eyelid_und2_r_n",
+    "b__R_ThighTwist__": "asi1_twist_r_sup",
+    "b__L_ThighTwist__": "asi1_twist_l_sup",
+    "b__R_Cheek__": "_cheek_btm1_r_n",
+    "b__L_Cheek__": "_cheek_btm1_l_n",
 }
 
 # Ensure you are in Object Mode and have an armature selected
