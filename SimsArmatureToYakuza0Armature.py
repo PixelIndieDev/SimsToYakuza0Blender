@@ -106,44 +106,5 @@ for bone in armature.data.edit_bones:
 bpy.context.object.show_in_front = True
 # Go back to object mode.
 bpy.ops.object.mode_set(mode="POSE")
-#Remove Useless Bones
-bones = bpy.context.active_object.pose.bones
-uselessBones = ['slot', 'prop', 'glasses', 'pole', 'carry', 'penis', 'nostril', 'stigmata', 'skirt', 'tounge']
-toRemove = []
- 
-for i in bones:
-    name = (i.name)
-    for item in uselessBones:
-        if item in name.lower() and i not in toRemove:
-            toRemove.append(i)
- 
-ob = bpy.context.object
-armature = ob.data
-bpy.ops.object.mode_set(mode='EDIT') # ensure edit mode
- 
-for i in toRemove:
-    bone = armature.edit_bones[i.name]
-    armature.edit_bones.remove(bone)
-    
-#Add Constraints to Hands, Fingers, Feet
-for i in bpy.context.object.pose.bones:
-    if 'hand' in i.name.lower():
-        i.constraints.new(type='IK')
-        i.constraints["IK"].chain_count = 3
- 
-for i in bpy.context.object.pose.bones:
-    if 'foot' in i.name.lower():
-        i.constraints.new(type='IK')
-        i.constraints["IK"].chain_count = 3
- 
-for i in bpy.context.object.pose.bones:
-    if '2' in i.name.lower() and 'spine' not in i.name.lower():
-        i.constraints.new(type='IK')
-        i.constraints["IK"].chain_count = 3
- 
- 
-#Special Settings
-bpy.context.object.show_in_front = True #Set the bones to always visible.
-bpy.ops.object.mode_set(mode='POSE') #Go back to object mode.
  
  
