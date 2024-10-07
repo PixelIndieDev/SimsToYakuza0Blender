@@ -5,7 +5,7 @@
 * Open Blender and import your Sims 4 rig.
 * Switch to Object Mode and select the Sims 4 armature.
 * Go to the Scripting tab in Blender's interface.
-* Copy (Everything, including blank lines) and paste the contents of this Python script into the Blender Python console.
+* Copy (everything, including blank lines) and paste the contents of this Python script into the Blender Python console.
   If successful, you should be in Pose Mode.
 
 You can now use Transfer Weights (by Names) to transfer weights between the two armatures.
