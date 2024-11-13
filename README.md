@@ -18,8 +18,8 @@ You can now use Transfer Weights (by Names) to transfer weights between the two 
 ![Sims model modded into Yakuza 0 (Image 2)](/Assets/ReadMeImages/SimsInYakuza0_02.gif)
 ![Sims model modded into Yakuza 0 (Image 4)](/Assets/ReadMeImages/SimsInYakuza0_04.png)
 ![Sims model modded into Yakuza 0 (Image 3)](/Assets/ReadMeImages/SimsInYakuza0_03.png)
-![Sims model modded into Yakuza 0 (Image 3)](/Assets/ReadMeImages/SimsInYakuza0_05.png)
-![Sims model modded into Yakuza 0 (Image 3)](/Assets/ReadMeImages/SimsInYakuza0_06.png)
+![Sims model modded into Yakuza 0 (Image 5)](/Assets/ReadMeImages/SimsInYakuza0_05.png)
+![Sims model modded into Yakuza 0 (Image 6)](/Assets/ReadMeImages/SimsInYakuza0_06.png)
 
 ## Below is a video showcasing a Sims 4 rig modded into Yakuza 0 cutscenes
 *Click on the image to play the video*
